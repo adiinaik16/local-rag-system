@@ -8,7 +8,7 @@ class Settings(BaseSettings):
 
     API_PREFIX: str = "/api/v1"
 
-    EMBEDDING_MODEL: str = "sentence-transformers/all-MiniLM-L6-v2"
+    EMBEDDING_MODEL: str = "sentence-transformers/bert-base-nli-mean-tokens"
     LLM_MODEL: str = "llama3.2"
 
     CHROMA_PATH: str = "storage/chroma"
