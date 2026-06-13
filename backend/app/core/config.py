@@ -9,7 +9,8 @@ class Settings(BaseSettings):
     API_PREFIX: str = "/api/v1"
 
     EMBEDDING_MODEL: str = "sentence-transformers/bert-base-nli-mean-tokens"
-    LLM_MODEL: str = "llama3.2"
+    OLLAMA_MODEL: str = "llama3.2:latest"
+    # LLM_MODEL: str = "llama3.2"
 
     CHROMA_PATH: str = "storage/chroma"
     UPLOAD_PATH: str = "storage/uploads"
@@ -23,6 +24,8 @@ class Settings(BaseSettings):
     ALLOWED_EXTENSIONS: list[str] = ["pdf"]
 
     OLLAMA_BASE_URL: str = "http://localhost:11434"
+    
+    TEMPERATURE: float = 0.0
 
     model_config = SettingsConfigDict(
         env_file=".env",

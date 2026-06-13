@@ -1,7 +1,7 @@
 from typing import List, Dict
 
 import chromadb
-from chromadb.config import Settings as ChromaSettings
+# from chromadb.config import Settings as ChromaSettings
 
 from app.core.config import settings
 from app.core.exceptions import VectorStoreError
