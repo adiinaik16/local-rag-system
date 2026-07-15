@@ -7,9 +7,7 @@ def main():
 
     rag = RAGService()
 
-    question = (
-        "What technologies should students use?"
-    )
+    question = input("Enter your question: ")
 
     result = rag.ask(
         question
